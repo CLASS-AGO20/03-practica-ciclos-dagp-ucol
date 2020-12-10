@@ -35,6 +35,16 @@ return resultado;
 }
 
 
+elevar(numero, potencia) {
+let resultado = 1;
+let x = 1;
+while (x<=potencia) {
+    resultado = resultado * numero;
+    x++;
+}
+return resultado;
+}
+
 
 
 
@@ -43,4 +53,5 @@ return resultado;
 let app = new App();
 console.log(app.factorial(5));
 console.log(app.convertirAString(5));
-console.log(app.obtenerDivisibles(6))
+console.log(app.obtenerDivisibles(6));
+console.log(app.elevar(3,4));
