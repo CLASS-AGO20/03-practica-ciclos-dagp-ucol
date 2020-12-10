@@ -20,6 +20,20 @@ while (x <= numero) {
 return resultado; 
 }
 
+obtenerDivisibles(numero) {
+let resultado = 0;
+let x = 0;
+do {
+    if ((numero % x)==0) {
+        resultado = resultado + 1;
+    } else {
+        resultado = resultado;
+    }
+    x++;
+} while (x <= numero);
+return resultado;
+}
+
 
 
 
@@ -29,3 +43,4 @@ return resultado;
 let app = new App();
 console.log(app.factorial(5));
 console.log(app.convertirAString(5));
+console.log(app.obtenerDivisibles(6))
